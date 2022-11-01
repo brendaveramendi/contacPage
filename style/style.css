@@ -64,6 +64,53 @@ color: #20dbd8;
 #check{
 	display: none;
 }
+/*BANNER*/
+
+#banner{
+	padding: 0 50px;
+	background-image: url(../image/banner-2.jpg);
+	height: 50vh;
+	background-size: cover;
+	background-position:center;
+}
+#banner::before{
+	content: '';
+	background: rgba(61, 61, 116, 0.6);
+	position: absolute;
+	width: 100%;
+	height: 50vh;
+	left: 0;
+}
+
+.contenido-banner h3{
+	font-size: 30px;
+	font-weight: 700;
+	padding: 10px 0;
+}
+.contenido-banner{
+	position: relative;
+	color: #ffe7ff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contenido-banner h3 span{
+	font-weight: 400;
+}
+
+.boton-empezar{
+	text-decoration: none;
+	color: #ffe7ff;
+	border: 1px solid #ffe7ff;
+	padding: 20px 40px;
+	align-self: baseline;
+	transition: all 0.4s;
+}
+.boton-empezar:hover{
+	background: #324C6070;
+
+}
 /* Responsividad */
 @media(max-width: 768px){
 .mostrar-menu,
