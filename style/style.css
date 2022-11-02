@@ -58,7 +58,8 @@ header{
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover{
-color: #20dbd8;
+color: rgba(168, 229, 255, 0.6);
+
 }
 
 #check{
@@ -111,6 +112,87 @@ color: #20dbd8;
 	background: #324C6070;
 
 }
+/*Personas*/
+
+#personas{
+	padding: 60px 60px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	justify-content: space-around;
+}
+#personas img{
+	border-radius: 100%;
+}
+#personas div{
+	padding: 40px 40px;
+}
+.image{
+	height: auto;
+	width: auto;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+#personas div h4{
+	color: #121324;
+	font-size: 20px;
+	margin: 15px 0px;
+}
+#personas div p{
+	color: #324C64;
+	font-size: 18px;
+}
+
+.boton-saber-mas{
+ display:inline-block; 
+text-decoration: none;
+color: #324C64;
+padding: 10px 30px;
+border: 3px solid #324C64;
+border-radius: 30px;
+margin-top: 10px;
+}
+
+.boton-saber-mas:hover{
+	background-color: #324C64;
+	color: #ffe7ff;
+}
+
+/*ICONOS*/
+.icons-text{	
+		font-size: 20px;
+		padding: 10px 0;
+		color: #ffe7ff;
+		text-align: center;
+}
+#iconos{
+	padding: 0px 50px;
+	background:#121324;
+}
+.contenido-iconos{
+padding: 50px 50px 0px 50px;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+.contenido-iconos div{
+	flex: 1;
+	margin: 20px 0px;
+	border-right: 2px solid rgba(61, 61, 116, 0.6);
+}
+#icono-node{
+	border: none;
+}
+.contenido-iconos div i{
+color: #ffe7ff;
+}
+.contenido-iconos div h6{
+	color: #ffe7ff;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 10px 0px;
+	}
 /* Responsividad */
 @media(max-width: 768px){
 .mostrar-menu,
@@ -121,7 +203,7 @@ color: #20dbd8;
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: #324C64;
+	background: #121324;
 	right: -100%;
 	top: 0;
 	text-align: center;
@@ -142,5 +224,16 @@ color: #20dbd8;
 }
 #check:checked ~ .menu{
 	right: 0;
+}
+/*Personas*/
+#personas{
+	flex-direction: column;
+}
+/* ICONOS */
+.contenido-iconos{
+	flex-direction: column;
+}
+.contenido-iconos div{
+	border: none;
 }
 }
